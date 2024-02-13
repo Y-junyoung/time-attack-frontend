@@ -17,7 +17,7 @@ function BrandDetailListPage(props: { params: { brandId: string } }) {
   });
   const { data: products } = returnValueOfUseQuery;
 
-  const fiteredProducts = products?.filter(
+  const filteredProducts = products?.filter(
     (product: Product) => product.brandId === Number(paramsBrandId)
   );
 
@@ -26,8 +26,8 @@ function BrandDetailListPage(props: { params: { brandId: string } }) {
       <BrandListPage />
       <Page>
         <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-8 gap-y-12">
-          {fiteredProducts &&
-            fiteredProducts?.map((product: Product) => (
+          {filteredProducts &&
+            filteredProducts?.map((product: Product) => (
               <li key={product.id}>
                 <ProductCard key={product.id} product={product} />
               </li>
