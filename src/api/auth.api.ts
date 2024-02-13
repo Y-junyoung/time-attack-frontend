@@ -1,7 +1,10 @@
 import { Client } from "./index.api";
 
 async function signUp(dto: { email: string; pw: string }) {
-  await Client.post<Response>("/auth/sign-up", dto);
+  const response = await Client.post("/auth/sign-up", dto);
+  const data = response.data;
+
+  return data;
 }
 
 async function logIn(dto: { email: string; pw: string }) {

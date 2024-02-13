@@ -13,7 +13,6 @@ function TrendingPage() {
     refetchOnWindowFocus: true,
   });
   const { data: products } = returnValueOfUseQuery;
-  console.log(products);
 
   return (
     <Page title="Trending">
