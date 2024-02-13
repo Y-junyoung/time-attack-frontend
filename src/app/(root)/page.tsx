@@ -1,3 +1,10 @@
+import Page from "@/components/Page";
+import TrendingPage from "./_components/TrendingPage";
+
 export default function Home() {
-  return <main>asd</main>;
+  return (
+    <Page>
+      <TrendingPage />
+    </Page>
+  );
 }

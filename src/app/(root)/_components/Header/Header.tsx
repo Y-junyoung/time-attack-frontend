@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HeaderButtons from "./HeaderButtons";
+import HeaderMenus from "./HeaderMenus";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
       </Link>
       <nav className="ml-20">BRANDS</nav>
 
-      <HeaderButtons />
+      <HeaderMenus />
     </header>
   );
 }
