@@ -20,7 +20,7 @@ function ProductDetailPage(props: { params: { productId: string } }) {
   });
 
   return (
-    <Page>
+    <Page data-full-width-responsive="false">
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
         <div className="relative aspect-[3/4]">
           <Image
@@ -52,7 +52,10 @@ function ProductDetailPage(props: { params: { productId: string } }) {
             <div className="text-slate-900 font-bold">잔여 재고</div>
             <div className="col-span-4">{product?.onlineStock}</div>
           </div>
-          <button className="border border-slate-700 py-4 px-12 text-[15px] font-semibold bg-white transition hover:-translate-y-1 active:translate-y-0 hover:drop-shadow w-full data-[color=black]:bg-black data-[color=black]:text-white">
+          <button
+            className="border border-slate-700 py-4 px-12 text-[15px] font-semibold bg-white transition hover:-translate-y-1 active:translate-y-0 hover:drop-shadow w-full data-[color=black]:bg-black data-[color=black]:text-white"
+            data-color="black"
+          >
             장바구니에 담기
           </button>
         </div>
