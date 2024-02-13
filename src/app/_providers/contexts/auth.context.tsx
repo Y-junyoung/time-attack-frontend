@@ -1,3 +1,4 @@
+"use client";
 import { Client } from "@/api/index.api";
 import { useRouter } from "next/navigation";
 import {

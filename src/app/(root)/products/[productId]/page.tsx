@@ -20,7 +20,7 @@ function ProductDetailPage(props: { params: { productId: string } }) {
   });
 
   return (
-    <Page data-full-width-responsive="false">
+    <Page data-full-width="false">
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
         <div className="relative aspect-[3/4]">
           <Image

@@ -7,7 +7,9 @@ function Header() {
       <Link href="/" className="font-bold text-2xl">
         발랑
       </Link>
-      <nav className="ml-20">BRANDS</nav>
+      <Link href="/brand-page" className="ml-20">
+        BRANDS
+      </Link>
 
       <HeaderMenus />
     </header>

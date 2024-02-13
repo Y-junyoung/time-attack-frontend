@@ -1,5 +1,6 @@
 import axios from "axios";
 import auth from "./auth.api";
+import brands from "./brans.api";
 import products from "./products.api";
 
 export const Client = axios.create({
@@ -7,6 +8,6 @@ export const Client = axios.create({
   withCredentials: true,
 });
 
-const API = { auth, products };
+const API = { auth, products, brands };
 
 export default API;

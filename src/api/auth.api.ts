@@ -12,10 +12,15 @@ async function logOut() {
   await Client.delete<Response>("/auth/log-out");
 }
 
+async function refreshToken() {
+  await Client.get<Response>("/auth/refresh-token");
+}
+
 const auth = {
   signUp,
   logIn,
   logOut,
+  refreshToken,
 };
 
 export default auth;

@@ -1,12 +1,15 @@
+import { AuthProvider } from "../_providers/contexts/auth.context";
 import Header from "./_components/Header/Header";
 
-function layout({ children }: { children: React.ReactNode }) {
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div id="root">
-      <Header />
-      {children}
-    </div>
+    <AuthProvider>
+      <div id="root">
+        <Header />
+        {children}
+      </div>
+    </AuthProvider>
   );
 }
 
-export default layout;
+export default RootLayout;
