@@ -22,8 +22,7 @@ function ProductCard({ product }: PropsWithChildren<ProductCardProps>) {
         <Image
           src={product.imgSrc}
           alt={product.name}
-          width={200}
-          height={200}
+          fill
           className="object-cover group-hover:scale-105 transition-transform"
         />
       </div>
